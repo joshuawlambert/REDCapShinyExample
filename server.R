@@ -2,7 +2,7 @@
 library(REDCapR)
 library(shiny)
 library(shinyBS)
-source('/home/MC/jwla225/ShinyApps/api_token_testREDCap.R',local=T)
+source('---PATH TO API TOKEN FILE ---',local=T)
 
 shinyServer(function(input, output) {
   ds <<- redcap_read(redcap_uri=uri, token=token)$data
